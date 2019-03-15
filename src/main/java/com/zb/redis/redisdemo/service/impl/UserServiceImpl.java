@@ -13,8 +13,8 @@ import org.springframework.stereotype.Service;
  **/
 @Service
 public class UserServiceImpl implements UserService {
-
-    private RedisManager redisManager = new RedisManager();
+    @Autowired
+    private RedisManager redisManager;
 
     @Override
     public String getRedis(String key) {
