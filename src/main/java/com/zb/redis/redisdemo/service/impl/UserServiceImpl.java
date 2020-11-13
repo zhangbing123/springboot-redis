@@ -1,8 +1,6 @@
 package com.zb.redis.redisdemo.service.impl;
 
-import com.zb.redis.redisdemo.helper.RedisManager;
 import com.zb.redis.redisdemo.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
@@ -13,16 +11,16 @@ import org.springframework.stereotype.Service;
  **/
 @Service
 public class UserServiceImpl implements UserService {
-    @Autowired
-    private RedisManager redisManager;
-
-    @Override
-    public String getRedis(String key) {
-        return (String) redisManager.get(key);
-    }
-
-    @Override
-    public void setRedis(String key, String value) {
-        redisManager.set(key,value);
-    }
+//    @Autowired
+//    private RedisManager redisManager;
+//
+//    @Override
+//    public String getRedis(String key) {
+//        return (String) redisManager.get(key);
+//    }
+//
+//    @Override
+//    public void setRedis(String key, String value) {
+//        redisManager.set(key,value);
+//    }
 }
