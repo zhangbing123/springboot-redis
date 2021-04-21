@@ -31,13 +31,12 @@ public class RedisTestController {
                 stringRedisTemplate.opsForValue().set("zhangbing" + i, i + "");
                 System.out.println("设置key：" + "zhangbing" + i);
                 i++;
-                Thread.sleep(3000);
+                Thread.sleep(2000);
             } catch (Exception e) {
                 log.error("异常:" + e);
             }
 
         }
     }
-
 
 }
