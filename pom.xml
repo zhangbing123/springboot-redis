@@ -68,7 +68,7 @@
         <dependency>
             <groupId>org.redisson</groupId>
             <artifactId>redisson</artifactId>
-            <version>3.5.7</version>
+            <version>3.22.0</version>
         </dependency>
         <!--uac鉴权相关依赖-->
         <dependency>
